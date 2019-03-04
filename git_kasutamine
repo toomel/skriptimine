@@ -5,4 +5,22 @@ esmakordselt:
 a) seadistada - kasutajanimi, emal, ediitor
 git config --global user.name "Eesnimi Perenimie"
 git config --global user.email kasutajanimi
-git 
+git config --global core.editor nano
+
+b) loo kataloog, kus hakatakse skriptima
+mkdir skriptimine
+
+c) sisine antud kausta
+cd skriptimine
+
+d) tekitada lokaalne repositoorium git süsteemi jaoks antud kaustas
+git init
+
+remote seadistamine:
+
+a) git remore add nimi aadress
+git remote add skriptimine Http://github.com/toomel/skriptimine.git
+
+b) git remote kontroll
+git remote -v
+
