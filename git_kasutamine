@@ -1,0 +1,8 @@
+* root kasutajana:
+installida git - apt-get install git
+* tavakasutajana:
+esmakordselt:
+a) seadistada - kasutajanimi, emal, ediitor
+git config --global user.name "Eesnimi Perenimie"
+git config --global user.email kasutajanimi
+git 
