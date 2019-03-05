@@ -1,0 +1,4 @@
+#! /bin/bash
+hostname #väljastab masina nime
+uptime | cut -f1 -d"," #kuvab kaua masin on töös olnud
+#lõpp
