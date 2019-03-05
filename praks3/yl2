@@ -1,0 +1,4 @@
+#!/bin/bash
+find /var/ -name *.log 2> /dev/null -exec wc -l '{}' \; | sort -n -r | cut -f2 -d" "
+# otsib .log faile, errorid  lähevad prügikasti, loeb väljundi iga faili ridade arvu, sorteerib ridade arvu ja lõikav välja teise tulba, eraldajaks tühik.
+# lõpp
