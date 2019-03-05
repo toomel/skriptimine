@@ -1,0 +1,9 @@
+#! /bin/bash
+#
+# tervitusskript
+#
+echo	-n "Täna on " # väljastab reavahetuseta Täna on ,
+date +"%A, %B, %X"  # väljastab data ja teeb reavahetuse
+cal #väljastab kalendri
+#
+#the end
