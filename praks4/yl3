@@ -1,0 +1,7 @@
+#! /bin/bash
+echo "Sisesta reisijate arv" #Küsib reisijate arvu
+read reisijad #Loeb sisse reisijate arvu
+echo "Sisesta bussi istekohtade arv" #Küsib bussi mahutavust
+read buss #Loeb sisse bussi mahutavuse
+echo "Täitub" `expr $reisijad / $buss` "bussi." #Arvutab välja mitu bussi täitub
+echo "Maha jääb" `expr $reisijad % $buss` "reisijat" #Arvutab välja mitu reisijat jääb maha
