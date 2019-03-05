@@ -1,0 +1,8 @@
+#! /bin/bash
+read -p "Mis on teie aluskandiku mõõtmed (kaks täisarvu)? " pikkus laius #küsib kandiku mõõtemeid
+read -p "Mitu kihti tuleb (täisarv)? " kiht #küsib kihtide arvu
+read -p "Mis on küpsiste mõõtmed (kaks täisarvu)? " kpikkus klaius #küsib küpsise mõõtmeid
+read -p "Mitu küpsist on pakis (täisarv)? " arv #küsib küpside  arvu pakis
+#Väike valem kah
+echo `expr \( $pikkus \* $laius / $klaius / $kpikkus \* $kiht + $arv - 1 \) / $arv` "pakki"
+#Finito
