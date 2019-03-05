@@ -1,0 +1,7 @@
+#! /bin/bash
+#Küsib nime
+echo "Mis su nimi on?" #küsib nime
+read eesnimi perenimi #loeb sisse nimed
+echo "Tere $eesnimi $perenimi" #Teretab ees- ja perenimega
+echo "Sinu eesnimi on $eesnimi ja perenimi on $perenimi" #eraldab eesnime ja perenime
+#lõpp
