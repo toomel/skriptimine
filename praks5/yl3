@@ -1,0 +1,5 @@
+#! /bin/bash
+read -p "Päev millal lähed?" day
+read -p "Kui kauaks?" duration
+
+echo `expr \( $day + $duration \) % 7 `

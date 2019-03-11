@@ -1,0 +1,3 @@
+#! /bin/bash
+read -p "Sieseta kaks arvu" one two
+echo täisosa `expr $one / $two`,`expr $one % $two \* 1000000000 / $two`
