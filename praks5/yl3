@@ -1,5 +1,8 @@
 #! /bin/bash
-read -p "Päev millal lähed?" day
-read -p "Kui kauaks?" duration
 
+read -p "Päev millal lähed?" day
+#Küsib päeva kunas lähed
+read -p "Kui kauaks?" duration
+#Küsib puhkuse pikkust
 echo `expr \( $day + $duration \) % 7 `
+#Arvutab välja kunas tagasi tullakse
