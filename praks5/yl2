@@ -1,0 +1,12 @@
+#! /bin/bash
+#
+#Kolmnurga pindala arvutamine kolme kasutaja sisestatud külje kaudu Heroni valemiga.
+read -p "Sisesta külje a pikkused eraldades need tühikuga " a b c
+#Kasutaja sisestab küljed
+#Arvutatakse kolmnurga ümbermõõt
+P=$(bc <<< "scale=1; ($a+$b+$c)/2")
+#Arvutatakse pool ümbermõõtu
+S=$(bc <<< "scale=4; sqrt(($P-$a)*($P-$b)*($P-$c)*$P)")
+#Heroni valem, mis arvutab pindala
+#echo $P väljastamiseks, et näha kas arvutab õigesti
+echo "Pindala on "$S
