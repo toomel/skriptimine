@@ -1,0 +1,25 @@
+#! /bin/bash
+#
+# Sisestatud kuu numbri järgi aastaaja leidmine
+read -p "Sisesta kellaeg, täistunnid: " kell
+# kontroll kas vanus on 6 ja 12 vahel või 12
+if test $kell -ge 6 -a $kell -lt 12 
+then
+	echo "Tere hommikust"
+# kontroll kas vanus on 3 ja 6 vahel
+elif test $kell -ge 12 -a $kell -lt 18
+then
+	echo "Tere päevast"
+# kontroll kas vanus on 6 ja 9 vahel
+elif test $kell -ge 18 -a $kell -lt 22 
+then
+	echo "Tere õhtust"
+# kontroll kas kuu number on 9 ja 12 vahel
+elif test $kell -ge 22 -a $kell -le 24 -o $kell -ge 0 -a $kell -lt 6
+then
+	echo "Head ööd!"
+# kui sisend ei vasta ülal toodud tingimustele
+else
+	echo "It's hammertime!"
+fi
+#GG
