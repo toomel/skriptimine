@@ -1,0 +1,25 @@
+#! /bin/bash
+#
+# Sisestatud vanuse järgi diskrimineerimine
+read -p "Sisesta oma vanus: " vanus
+# kontroll kas vanus on 0 ja 11 vahel
+if test $vanus -gt 0 -a $vanus -lt 11
+then
+	echo "oled laps"
+# kontroll kas vanus on 11 ja 18 vahel
+elif test $vanus -ge 11 -a $vanus -lt 18
+then
+	echo "oled nooruk"
+# kontroll kas vanus on 18 ja 63 vahel
+elif test $vanus -ge 18 -a $vanus -lt 63
+then
+	echo "oled täiskasvanu"
+# kontroll kas vanus on üle 63
+elif test $vanus -ge 63
+then
+	echo "oled  seenior"
+# kui sisend ei vasta ülal toodud tingimustele
+else
+	echo "vigane sisend"
+fi
+#GG
