@@ -2,15 +2,15 @@
 #
 # Sisestatud kuu numbri järgi aastaaja leidmine
 read -p "Sisesta kuu number: " kuu
-# kontroll kas vanus on 1 ja 2 vahel või 12
+# kontroll kas kuu on 1 ja 2 vahel või 12
 if test $kuu -gt 1 -a $kuu -lt 3 -o $kuu -eq 12
 then
 	echo "Praegu on talv"
-# kontroll kas vanus on 3 ja 6 vahel
+# kontroll kas kuu on 3 ja 6 vahel
 elif test $kuu -ge 3 -a $kuu -lt 6
 then
 	echo "Praegu on kevad"
-# kontroll kas vanus on 6 ja 9 vahel
+# kontroll kas kuu on 6 ja 9 vahel
 elif test $kuu -ge 6 -a $kuu -lt 9
 then
 	echo "Praegu on suvi"
