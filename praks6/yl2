@@ -5,12 +5,13 @@ echo "Sisesta bussi istekohtade arv" #Küsib bussi mahutavust
 read buss #Loeb sisse bussi mahutavuse
 kohad=$(( $reisijad / $buss )) #Arvutab välja mitu bussi täitub
 maha=$(( $reisijad % $buss )) #Arvutab välja mitu reisijat jääb maha
-echo $maha
+#echo $maha
+#Kontrollib, kas inimesed mahuvad täpselt bussidele
 if [ $maha -eq 0 ]
 then
-#
+	#Bussid tulevad täpselt täis
 	echo "Vaja läheb " $kohad " bussi"
 else
-	echo "else"
+	#Annab ühe bussi lisaks
 	echo "Vaja läheb " `expr $kohad + 1` " bussi"
 fi

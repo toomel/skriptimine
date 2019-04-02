@@ -1,0 +1,19 @@
+#! /bin/bash
+#
+# Kontroll, kas arv on paarisarv
+# Kontroll, kas programmile lisati parameeter
+if [ "$1" == "" ]
+then
+echo "Parameeter puudub."
+else
+#arvutamine jäägi 2-ga jagamisel
+jaak=$(( $1 % 2 ))
+# lihtne if funktsioon
+if [ $jaak -eq 0 ]
+then
+	echo $1 " on paaris"
+else
+	echo $1 " on paaritu"
+fi
+fi
+#
