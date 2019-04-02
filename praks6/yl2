@@ -1,0 +1,16 @@
+#! /bin/bash
+echo "Sisesta reisijate arv" #Küsib reisijate arvu
+read reisijad #Loeb sisse reisijate arvu
+echo "Sisesta bussi istekohtade arv" #Küsib bussi mahutavust
+read buss #Loeb sisse bussi mahutavuse
+kohad=$(( $reisijad / $buss )) #Arvutab välja mitu bussi täitub
+maha=$(( $reisijad % $buss )) #Arvutab välja mitu reisijat jääb maha
+echo $maha
+if [ $maha -eq 0 ]
+then
+#
+	echo "Vaja läheb " $kohad " bussi"
+else
+	echo "else"
+	echo "Vaja läheb " `expr $kohad + 1` " bussi"
+fi
