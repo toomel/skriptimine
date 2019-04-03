@@ -1,0 +1,30 @@
+#! /bin/bash
+#
+# Algarvu tuvastamine 
+read -p "Sisesta suvaline arv, milleni soovid algarve leida " viimane
+# For tsükkel mis suurendab arvu ühe võrra kuni arv on võrdne sisestatud arvuga
+for (( arv=0; arv<=$viimane; arv++ ))
+do
+# Kontroll kas arv on 0 või 1;
+if [ $arv -eq 0 -o $arv -eq 1 ]
+then
+	echo $arv "ei ole algarv"
+else
+# Jagaja ja jäägi defineerimine
+jagaja=2
+jaak=$(($arv % $jagaja))
+# While tsükkel mis lõppeb kui jääk on 0, ehk arv jagub mingi arvuga
+while [ $jaak -ne 0 ]
+do
+# Jagaja ühe võrra suuredamine ja arvu jagamine 
+	jagaja=$(($jagaja + 1))
+	jaak=$(($arv % $jagaja))
+done
+# Kontroll, kas while tsükkel jõudis lõpuni ja jagaja on võrdne arvuga
+if [ $arv -eq $jagaja ]
+then
+	echo $arv "on algarv"
+fi
+fi
+done
+#GG

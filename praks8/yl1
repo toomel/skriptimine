@@ -1,0 +1,19 @@
+#! /bin/bash
+#
+# Paarisarvude summa leidmine 
+# Summa defineerimine
+summa=0
+# For tsükkel, mis töötab niikaua kuni arv on väiksem 11-st ja suurendab arvu sammuga 1
+for (( arv=0; arv<11; arv++ ))
+do
+# Jäägi leidmine, et saaks paarsuse kontrolli teostada
+	jaak=$((arv % 2))
+# If kontroll paarsuse jaoks
+	if [ $jaak -eq 0 ]
+	then
+		summa=$(($summa + $arv))
+#		echo $summa
+	fi 
+done
+echo "Paaris arvude summa vahemikust 1 kuni 10 on " $summa
+#GG
