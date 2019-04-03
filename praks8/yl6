@@ -1,6 +1,6 @@
 #! /bin/bash
 #
-# Algarvu tuvastamine 
+# Algarvu tuvastamine ja ainult alguarvude väljastamine
 read -p "Sisesta suvaline arv, milleni soovid algarve leida " viimane
 # For tsükkel mis suurendab arvu ühe võrra kuni arv on võrdne sisestatud arvuga
 for (( arv=0; arv<=$viimane; arv++ ))
