@@ -1,0 +1,26 @@
+#! /bin/bash
+#
+# Sisestatud kellaaja järgi tervitamine
+read -p "Sisesta kellaeg, täistunnid: " kell
+# kontroll kas kell on 6 ja 12 vahel
+if test $kell -ge 6 -a $kell -lt 12 
+then
+	echo -n "Tere hommikust, "
+# kontroll kas kell on 12 ja 18 vahel
+elif test $kell -ge 12 -a $kell -lt 18
+then
+	echo -n "Tere päevast, "
+# kontroll kas kell on 18 ja 22 vahel
+elif test $kell -ge 18 -a $kell -lt 22 
+then
+	echo -n "Tere õhtust, "
+# kontroll kas kell on 22 ja 24 vahel või 0 ja 6 vahel
+elif test $kell -ge 22 -a $kell -le 24 -o $kell -ge 0 -a $kell -lt 6
+then
+	echo -n "Head ööd, "
+# kui sisend ei vasta ülal toodud tingimustele
+else
+	echo -n "Ma tean, kus sa elad "
+fi
+whoami
+#GG
