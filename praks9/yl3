@@ -1,14 +1,13 @@
 #! /bin/bash
 #
 # Nelinurga välja printimine 
-read -p "Sisesta ridade arv"  rida
-read -p "Sisesta tärnide arv" arv
+read -p "Sisesta ridade arv "  rida
+read -p "Sisesta tärnide arv " arv
 for (( i = 1; i <= rida; i++ )) #tsükkel, ridade vahetuse ja prinditava arvu suurendamise kohta
 do
 	for (( j = 1 ; j <= arv; j++ )) #tsükkel, mis väljastab ridadele piisava arvu * märke
 	do
-		if [ $i -eq 1 -o $i -eq $rida -o $j -eq $arv -o $j -eq 1 
-] #kontroll, kas prinditakse esimesele/viimasele reale/veerule
+		if [ $i -eq 1 -o $i -eq $rida -o $j -eq $arv -o $j -eq 1 ] #kontroll, kas prinditakse esimesele/viimasele reale/veerule
 		then
 			echo -n "* "
 		else
