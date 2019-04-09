@@ -1,0 +1,14 @@
+#! /bin/bash
+#
+# Algarvu tuvastamine 
+for (( i = 1; i <= 5; i++ )) #tsükkel, ridade vahetuse ja prinditava arvu suurendamise kohta
+do
+echo -n $i". "
+	for (( j = 1 ; j <= 5; j++ )) #tsükkel, mis väljastab ridadele piisava arvu * märke
+	do
+		echo -n "* "
+	done
+echo ""
+done
+
+#GG
