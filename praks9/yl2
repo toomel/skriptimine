@@ -1,0 +1,16 @@
+#! /bin/bash
+#
+# Ridade arvu ja tärnide arvu väljastamine vastavalt sisestatud väärtustele 
+read -p "Sisesta ridade arv"  rida
+read -p "Sisesta tärnide arv" arv
+for (( i = 1; i <= rida; i++ )) #tsükkel, ridade vahetuse ja prinditava arvu suurendamise kohta
+do
+echo -n $i". "
+	for (( j = 1 ; j <= arv; j++ )) #tsükkel, mis väljastab ridadele piisava arvu * märke
+	do
+		echo -n "* "
+	done
+echo ""
+done
+
+#GG

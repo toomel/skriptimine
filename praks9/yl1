@@ -1,6 +1,6 @@
 #! /bin/bash
 #
-# Algarvu tuvastamine 
+# 5x5 tärnidest koosneva ruudu väljastamine
 for (( i = 1; i <= 5; i++ )) #tsükkel, ridade vahetuse ja prinditava arvu suurendamise kohta
 do
 echo -n $i". "
