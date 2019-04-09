@@ -2,15 +2,15 @@
 #
 # Nelinurga välja printimine, mis koosneb kahest kolmnurgast
 read -p "Sisesta ridade arv "  rida
-for (( i = 1; i < rida; i++ )) #tsükkel, ridade vahetuse ja prinditava arvu suurendamise kohta
+for (( i = 1; i <= rida; i++ )) #tsükkel, ridade vahetuse ja prinditava arvu suurendamise kohta
 do
-	for (( j = 1 ; j <= rida; j++ )) #tsükkel, mis väljastab ridadele piisava arvu * märke
+	for (( j = rida ; j >= 1; j-- )) #tsükkel, mis väljastab ridadele piisava arvu * märke
 	do
 		if [ $i -ge $j ] #kontroll, kus kursori asukoht on
 		then
-			echo -n "o "
-		else
 			echo -n "* "
+		else
+			echo -n "o "
 		fi
 	done
 echo ""
