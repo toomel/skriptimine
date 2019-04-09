@@ -1,0 +1,14 @@
+#! /bin/bash
+#
+# Väljastab ridade arvule vastavalt * tehtud kolmnurga 
+read -p "Sisesta ridade arv "  rida
+for (( i = 1; i <= rida; i++ )) #tsükkel, ridade vahetuse ja prinditava arvu suurendamise kohta
+do
+	for (( j = 1 ; j <=  i; j++ )) #tsükkel, mis väljastab ridadele piisava arvu * märke
+	do
+		echo -n "* "
+	done
+echo ""
+done
+
+#GG
